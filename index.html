@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Поздравление с 23 февраля</title>
+    <title>Happy Defender's Day</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="card">
-        <h1>Happy Defender of the Fatherland Day!</h1>
+        <h1>Happy Defender's Day!</h1>
         <p>Dear Advisor,</p>
         <p>On this special day, we want to take a moment to honor and appreciate you—not just as a mentor, but as a true guide and supporter. Your dedication, patience, and wisdom inspire us every day, and we are incredibly lucky to have you by our side.</p>
         <p>Thank you for your tireless efforts, for believing in us, and for always leading with kindness. May this day bring you joy, pride, and the recognition you truly deserve.</p>
-        <button class="button" onclick="showSurprise()">Show surprise!!</button>
+        <button class="button" onclick="showSurprise()">Show Surprise</button>
         <div id="surprise" style="display: none;">
             <p>Wishing you strength, happiness, and endless success in all that you do!</p>
             <p>You are the best advisor, and we are so grateful for you!</p>
-            <img id="surprise-img" src="IMG_8125.jpeg" alt="Поздравление" />
-            <p id="ps" style="display: none;">P.S. from EEAIR24 
-                to Zhenishbek agai &lt;3</p>
+            <div class="image-container">
+                <img id="surprise-img1" src="IMG_8125.jpeg" alt="Defender's Day Photo 1" />
+            </div>
+            <div class="image-container">
+                <img id="surprise-img2" src="IMG_8129.jpeg" alt="Defender's Day Photo 2" />
+            </div>
+            <p id="ps" style="display: none;">P.S. EEAIR24 &lt;3</p>
         </div>
     </div>
 
@@ -26,8 +30,10 @@
         function showSurprise() {
             document.getElementById("surprise").style.display = "block";
             document.getElementById("ps").style.display = "block";  
-            document.getElementById("surprise-img").style.display = "block"; // Показываем изображение
+            document.getElementById("surprise-img1").style.display = "block"; // Show first image
+            document.getElementById("surprise-img2").style.display = "block"; // Show second image
         }
     </script>
 </body>
 </html>
+
