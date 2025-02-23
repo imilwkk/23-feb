@@ -64,14 +64,14 @@ p {
 }
 
 #surprise-img {
-    display: none;
+    display: block;
+    margin: 0 auto;
     margin-top: 15px;
     width: 80%;
     max-width: 400px;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    margin-left: 20px;  /* Сдвигаем изображение вправо */
 }
 
 #surprise-img:hover {
@@ -85,4 +85,5 @@ p {
     color: #666;
     font-size: 14px;
 }
+
 
