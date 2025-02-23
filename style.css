@@ -63,10 +63,14 @@ p {
     font-size: 18px;
 }
 
-#surprise-img {
-    display: block;
-    margin: 0 auto;
+.image-container {
+    display: flex;
+    justify-content: center;
     margin-top: 15px;
+}
+
+#surprise-img1, #surprise-img2 {
+    display: none;
     width: 80%;
     max-width: 400px;
     border-radius: 10px;
@@ -74,7 +78,7 @@ p {
     transition: transform 0.3s ease-in-out;
 }
 
-#surprise-img:hover {
+#surprise-img1:hover, #surprise-img2:hover {
     transform: scale(1.05);
 }
 
@@ -85,5 +89,4 @@ p {
     color: #666;
     font-size: 14px;
 }
-
 
