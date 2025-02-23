@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: linear-gradient(to bottom, #e0f7fa, #b3e5fc);
+    background: linear-gradient(to bottom, #b3e5fc, #81d4fa); /* Светло-голубой градиент */
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -15,8 +15,8 @@ body {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-    max-width: 500px;
+    max-width: 600px;
+    width: 100%;
     text-align: center;
     transition: transform 0.3s ease-in-out;
 }
@@ -27,14 +27,15 @@ body {
 
 h1 {
     color: #007BFF;
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 p {
     color: #333;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
 .button {
@@ -46,13 +47,12 @@ p {
     cursor: pointer;
     margin-top: 20px;
     border-radius: 8px;
-    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
     font-weight: bold;
+    transition: background 0.3s ease-in-out;
 }
 
 .button:hover {
     background: #0056b3;
-    transform: translateY(-2px);
 }
 
 #surprise {
@@ -69,8 +69,8 @@ p {
     margin-top: 15px;
 }
 
-#surprise-img1, #surprise-img2 {
-    display: none;
+.image-container img {
+    display: block;
     width: 80%;
     max-width: 400px;
     border-radius: 10px;
@@ -78,14 +78,12 @@ p {
     transition: transform 0.3s ease-in-out;
 }
 
-#surprise-img1:hover, #surprise-img2:hover {
+.image-container img:hover {
     transform: scale(1.05);
 }
 
 #ps {
-    display: none;
     font-style: italic;
-    margin-top: 10px;
-    color: #666;
-    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
 }
