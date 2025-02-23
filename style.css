@@ -5,9 +5,10 @@ body {
     padding: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start;  /* Используем flex-start, чтобы блок был вверху */
+    min-height: 100vh;
     margin: 0;
+    overflow-x: hidden;  /* Чтобы предотвратить горизонтальный скроллинг */
 }
 
 .card {
@@ -19,6 +20,7 @@ body {
     width: 100%;
     text-align: center;
     transition: transform 0.3s ease-in-out;
+    overflow: hidden;  /* Чтобы содержимое не вылазило за пределы карточки */
 }
 
 .card:hover {
@@ -61,6 +63,7 @@ p {
     font-weight: bold;
     color: #007BFF;
     font-size: 18px;
+    margin-bottom: 50px;  /* Убедимся, что нижняя часть блока не обрезана */
 }
 
 .image-container {
@@ -87,3 +90,4 @@ p {
     color: #555;
     margin-top: 15px;
 }
+
